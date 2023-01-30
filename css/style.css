@@ -6,7 +6,7 @@ body{
 	font-size:150%;
 	font-family: Arial, Verdana;
     background-color: powderblue;
-	color: darkslategrey;
+	color: black;
 }
 
 /*Make the h1 heading bigger with a bold font*/
@@ -41,7 +41,7 @@ main img{
 /*Make the h2 heading match h1*/
 h2{
     font-size: 30px;
-    color: darkslategray; 
+    color: black; 
 }
 
 /*Improve the spacing for paragraphs AND headings*/
@@ -53,8 +53,8 @@ p{
 
 /*Add borders around the main components and some
 space too*/
-header, nav, main, footer{
-	border: 3px solid silver;
+main, footer{
+	border: 3px solid darkblue;
 	margin: 20px 0;
 }
 
@@ -62,16 +62,16 @@ header, nav, main, footer{
 /*Change the styling for all of the list 
 items in the nav section*/
 nav li{
-	background-color: lightgreen;
+	background-color:rgba(228, 222, 222, 0.879);
 	padding:10px;
-	border:1px solid silver;
+	border:1px solid gray;
 	display: inline-block;
 	width: 20%;
 	text-align: center;
 }
 
 /*Added this so the links stay the same color*/
-a:visited{color:coral}
+a:visited{color: rgb(156, 3, 156)}
 
 footer{
     background: linear-gradient(90deg,#000000 0%, #0000ff 25%, #0066ff 75%, #000000 100% );
