@@ -5,8 +5,8 @@ body{
 	padding:1%;
 	font-size:150%;
 	font-family: Arial, Verdana;
-    background-color: #000000;
-	color: #ffffff;
+    background-color: powderblue;
+	color: darkslategrey;
 }
 
 /*Make the h1 heading bigger with a bold font*/
@@ -27,19 +27,21 @@ h1{
 }
 
 /*Style the images*/
-img{
-    height: 175px;
-	width:auto;
-    border: 3px solid blue;
-    padding: 25px;
-    border-radius: 20px;
-    margin: 10px;
-}
+
+main img{
+    width: 25 px;
+    display: inline-block;
+    padding: 15px;
+    border: darkblue dashed 5px;
+    margin: none;
+    box-sizing: border-box;
+  
+ }
 
 /*Make the h2 heading match h1*/
 h2{
     font-size: 30px;
-    color: #0D0D0D; 
+    color: darkslategray; 
 }
 
 /*Improve the spacing for paragraphs AND headings*/
@@ -52,7 +54,7 @@ p{
 /*Add borders around the main components and some
 space too*/
 header, nav, main, footer{
-	border: 3px solid red;
+	border: 3px solid silver;
 	margin: 20px 0;
 }
 
@@ -62,7 +64,7 @@ items in the nav section*/
 nav li{
 	background-color: lightgreen;
 	padding:10px;
-	border:1px solid white;
+	border:1px solid silver;
 	display: inline-block;
 	width: 20%;
 	text-align: center;
@@ -79,6 +81,7 @@ footer p {
     font-size: 20px;
     text-align: right;
     padding: 15px 15px 15px 0px;
+    color: white;
 }
 
 
