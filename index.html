@@ -3,62 +3,54 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- <link rel="stylesheet" href="css/html5reset.css"> -->
-	<title>About Me</title>
+	<link rel="stylesheet" href="css/html5reset.css">
+	<link href = "dist/css/lightbox.css" rel = "stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Home</title>
 </head>
 <body>
 	<a class = "skip" href="#main">Skip to Main Content</a>
 	<header>
-		<nav>
+		<nav class = "control">
 			<ul>
 				<li class="active"><a href = "index.html">Home Page</a></li>
 				<li><a href = "aboutMe.html" >About Me</a></li>
 				<li><a href = "projects.html">Projects</a></li>
 			</ul>
 		</nav>
-		<img src="images/Myemoticon.jpg" width = "200" alt="My Emoticon">
-		<h1>Adam Caseñas</h1>
+		<h1 class = "Me">Adam Caseñas</h1>
 	</header>
 	<main id = "main">
-		<img src="images/fam.jpg" width = "200" alt="Me With My Family">
-		<p>My name is Adam Caseñas. I am a second year student at the Univerity of Michigan. I am pursuing a Bachelor of Science in Information with a focus on Informationm Analysis. Along with my major, I am pursuing a Minor in Computer Science. </p>
-		<div>
-			<h2>My Involvements</h2>
-			<h3>
-				Professional Experience
-			</h3>
-			<h4>FATE - Give Merit</h4>
-			<img src="images/FateLogo.jpg" width = "200" alt="Fate - Give Merit Logo">
-			<p>
-				One of my proudest involvements is with the program <a href = "https://givemerit.org/pages/fate"> FATE- Give Merit 
-				</a>. There I am a mentor for the 9th grade cohort and I plan to stay involved with the program until at least my two mentees graduate. Within FATE, I am also a part of the FATE Planning Committee (FPC). In the FPC, we plan and organize monthly mentor meetings, mentor social events, fundraising activities, social media campaigns for mentor recruitment, and the annual “Mentor Banquet”. We are also currently working on planning a tour of the University of Michigan Ann Arbor Campus for the 10th graders. I love being able to help affirm in Detroit's youth that they are "world changers" (as we call them).
-		
-			</p>
-			<h4>Michigan Football Analytics Society</h4>
-			<img src="images/MFANS.jpg" width = "200" alt="Michigan Football Analytics Society Logo">
-			<p>
-
-			</p>
-			<h4>Delta One Consulting</h4>
-			<img src="images/Delta1.jpg" width = "200" alt="Delta1 Consulting Logo">
-			<p>
-
-			</p>
-			<h4>Pizza Papalis</h4>
-			<img src="images/PizzaPapalis.jpg" width = "200" alt="Pizza Papalis Logo">
-			<h3>Other Exoerience</h3>
-			<h4>Birmingham Young Lifters</h4>
-			<img src="images/younglifterslogo.jpg" width = "200" alt="Birmingham Young Lifters Logo">
-			<p>
-
-			</p>
-			<h4>Duck's Unlimited</h4>
-			<img src="images/ducksunlimited.jpg" width = "200" alt="Duck's Unlimited Logo">
-			<h4>Oakland Hills Country Club</h4>
-			<img src="images/oaklandhills.png" width = "200" alt="Duck's Unlimited Logo">
-
+		<img class = "soloshot" src="images/fam.jpg" width = 100px alt="Me With My Family">
+		<h2>Experience</h2>
+		<div class = "gallery">
+			<a href = "images/FateLogo.jpg" target="_blank" data-lightbox="Logo" data-title = "FATE Give Merit is a program." data-alt = "Fate - Give Merit Logo">
+				<img class = "item" src="images/FateLogo.jpg"  alt="Fate - Give Merit Logo">
+			</a>
+			<a href = "images/MFANS.jpg" target="_blank" data-lightbox="Logo" data-title = "MFANS is a program." data-alt = "Michigan Football Analytics Society Logo">
+				<img class = "item" src="images/MFANS.jpg"  alt="Michigan Football Analytics Society Logo">
+			</a>
+			<a href = "images/Delta1.jpg" target="_blank" data-lightbox="Logo" data-title="Delta1 is a weed companys" data-alt="Delta1 Consulting Logo">
+				<img class = "item" src="images/Delta1.jpg"  alt="Delta1 Consulting Logo">
+			</a>
+			<a href = "images/PizzaPapalis.jpg" target="_blank" data-lightbox="Logo" data-title="PizzaPapalis is a restaraunt" data-alt="Pizza Papalis Logo">
+				<img class = "item" src="images/PizzaPapalis.jpg"  alt="Pizza Papalis Logo">
+			</a>
+			<a href = "images/younglifterslogo.jpg" target="_blank" data-lightbox="Logo" data-title="Birmingham Young Lifters is a exercise/lifting club that I founded." data-alt="Birmingham Young Lifters Logo">
+				<img class = "item" src="images/younglifterslogo.jpg"  alt="Birmingham Young Lifters Logo">
+			</a>
+			<a href = "images/ducksunlimited.jpg" target="_blank" data-lightbox="Logo" data-title="Ducks Unlimited is a club." data-alt="Duck's Unlimited Logo">
+				<img class = "item" src="images/ducksunlimited.jpg"  alt="Duck's Unlimited Logo">
+			</a>
+			<a href = "images/oaklandhills.jpg" target="_blank" data-lightbox="Logo" data-title="Oakland Hills is a Counry Club" data-alt="Oakland Hills Country Club Logo">
+				<img class = "item" src="images/oaklandhills.jpg"  alt="Oakland Hills Country Club Logo">
+			</a>
+			<a href = "images/skills.jpg" target="_blank" data-lightbox="Logo" data-title="Some of my skills" data-alt="Skills Logo">
+				<img class = "item" src="images/skills.jpg"  alt="Skills Logo">
+			</a>
 		</div>
 	</main>
+	<script src = "dist/js/lightbox-plus-jquery.js"></script>
 	<footer>
 		<p>Property of Adam Caseñas, 2023</p>
 	</footer>
