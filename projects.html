@@ -13,24 +13,71 @@
 		<nav class = control>
 			<ul>
 				<li><a href = "index.html">Home Page</a></li>
-				<li><a href = "aboutMe.html" >About Me</a></li>
+				<li><a href = "aboutme.html" >About Me</a></li>
 				<li class = "active"><a href = "projects.html">Projects</a></li>
 			</ul>
 		</nav>
-		<img src="images/Myemoticon.jpg" width = "200" alt="My Emoticon">
 		<h1>Project Page</h1>
 
 	</header>
 	
 	<main id = "main">
+		<div class="controls">
+            <button type="button" class="btn" data-filter="all">All</button>
+            <button type="button" class="btn" data-filter=".freelance">Freelance Work</button>
+            <button type="button" class="btn" data-filter=".analytics">Sports Analytics</button>
+            <button type="button" class="btn" data-filter=".socialmedia">Social Media Content</button>
+            <button type="button" class="btn" data-filter="none">None</button>
+        </div>
+
 		<p>
-			My <a href = "https://github.com/acasenas">Git Hub Repo 
-			</a> is soon to host some of my personal projects, but for the time being you may see some of the coursework I have completed as a student at Michigan. (You can see the files I wrote to create this website <a href = "https://github.com/acasenas/personal-website">Here 
-			</a>) 
+			You can see the files I wrote to create this website <a href = "https://github.com/acasenas/personal-website">Here </a>
 		</p>
+		<div class="container gallery">
+            <figure class = "mix freelance" >
+                <img src="images/Delta1.jpg" alt="3 cups of coffee one with cream, one without, and a cookie">
+                <figcaption>Dark $5.29</figcaption>
+            </figure>
+
+            <figure class = "mix freelance" >
+                <img src="images/Delta1.jpg" alt="flat white coffee with a small spoon on a saucer">
+                <figcaption>Latte $5.69</figcaption>
+            </figure>
+    
+            <figure class = "mix analytics" >
+                <iframe src="https://colab.research.google.com/drive/1kC9dt0WxRESnCaWCZhG_dJdedGoGZwbl?usp=sharing" width="100%" frameborder="0"></iframe>
+                <figcaption>Google CoLab Projects</figcaption>
+
+            </figure>
+
+            <figure class = "mix analytics" >
+                <iframe src="https://github.com/acasenas/Early-Analysis.git" width="100%" frameborder="0"></iframe>
+                <figcaption>Github Project</figcaption>
+
+            </figure>
+
+            <figure class = "mix socialmedia">
+				<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@itsadame" data-unique-id="itsadame" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@itsadame?refer=creator_embed">@itsadame</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                <figcaption>TikTok Content</figcaption>
+
+            </figure>
+
+            <figure class = "mix socialmedia" >
+                <iframe width="100%" src="https://www.youtube.com/embed/NTE9AU3paK0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figcaption>Youtube Content</figcaption>
+
+            </figure>
+
+        </div>
 	</main>
+	<script src="js/mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('.container');
+        var mixer = mixitup(containerEl);
+    </script>
 	<footer>
 		<p>Property of Adam Caseñas, 2023</p>
 	</footer>
+
 </body>
 </html>
