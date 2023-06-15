@@ -211,6 +211,7 @@ video{
     .card img{
         flex: 0 1 30%;
     }
+    
     p{
         font-size: 1.5em;
     }
